@@ -1,4 +1,4 @@
- /*----- constants -----*/
+  /*----- constants -----*/
   const MAX_ATTEMPTS = 6;
   const WORDS = ["javascript", "developer", "interface", "function", "variable"];
   /*----- state variables -----*/
@@ -11,7 +11,6 @@
   const wordBank = document.getElementById('word-bank');
   const spaceman = document.getElementById('spaceman');
   const message = document.getElementById('message');
-  
 
   /*----- event listeners -----*/
   newWordBtn.addEventListener('click', initialize);
@@ -19,7 +18,7 @@
   /* Initialize the game */
   initialize();
 
-  /*----- functions -----*/ //letter bank, word bank?
+  /*----- functions -----*/
   function initialize() {
     word = WORDS[Math.floor(Math.random() * WORDS.length)];
     guessedWord = Array(word.length).fill('_');
@@ -29,7 +28,7 @@
 }
 
 function render() {
-    //Guessed Word
+    // Render the guessed word
     wordDisplay.innerHTML = '';
     guessedWord.forEach(letter => {
         const letterBox = document.createElement('div');
@@ -38,7 +37,7 @@ function render() {
         wordDisplay.appendChild(letterBox);
     });
 
-    //Incorrect Guesses
+    // Render the incorrect guesses
     incorrectList.innerHTML = '';
     incorrectGuesses.forEach(letter => {
         const listItem = document.createElement('li');
@@ -46,7 +45,7 @@ function render() {
         incorrectList.appendChild(listItem);
     });
 
-    //Word Bank
+    // Render the word bank
     wordBank.innerHTML = '';
     for (let i = 0; i < 26; i++) {
         const letter = String.fromCharCode(97 + i);
@@ -57,15 +56,19 @@ function render() {
         wordBank.appendChild(letterDiv);
     }
 
-    //Spaceman
-    spaceman.innerHTML = `Attempts Remaining: ${remainingAttempts}`;
+    // Render the spaceman
+    if (spaceman) {
+        spaceman.innerHTML = `Attempts Remaining: ${remainingAttempts}`;
+    }
 
-    //Message
-    message.textContent = '';
-    if (guessedWord.join('') === word) {
-        message.textContent = 'You Win!';
-    } else if (remainingAttempts <= 0) {
-        message.textContent = `You Lose! The word was ${word}`;
+    // Render the message
+    if (message) {
+        message.textContent = '';
+        if (guessedWord.join('') === word) {
+            message.textContent = 'You Win!';
+        } else if (remainingAttempts <= 0) {
+            message.textContent = `You Lose! The word was ${word}`;
+        }
     }
 }
 
