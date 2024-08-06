@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spaceman</title>
-    <script defer src="js/main.js"></script>
-    <link rel="stylesheet" href=" css/main.css">
+    <title>Spaceman Game</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div id="header">
+        <h1>Spaceman Game</h1>
+        <img id="spaceship" src="path/to/spaceship.png" alt="Spaceship">
+        <img id="beam" src="path/to/beam.png" alt="Beam">
+    </div>
+    <div id="game-container">
+        <div id="left-panel">
+            <img id="word-bank-graph" src="path/to/word-bank-graph.png" alt="Word Bank Graph">
+            <div id="word-bank"></div>
+        </div>
+        <div id="middle-panel">
+            <div id="word-display"></div>
+            <button id="new-word">
+                <img src="path/to/new-word-button.png" alt="New Word">
+            </button>
+        </div>
+        <div id="right-panel">
+            <div id="incorrect-guesses">
+                <h3>Incorrect Guesses:</h3>
+                <ul id="incorrect-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js" defer></script>
 </body>
 </html>
