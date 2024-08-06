@@ -1,8 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: monoton, sans-serif;
     text-align: center;
-    background-image: url('https://i.imgur.com/GpKSsFy.png');
-    background-size: cover; 
+    background-image: url(https://private-user-images.githubusercontent.com/175498825/355565256-fd153dec-5306-4b6c-9072-a6d63026287f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjI5NzAwNzYsIm5iZiI6MTcyMjk2OTc3NiwicGF0aCI6Ii8xNzU0OTg4MjUvMzU1NTY1MjU2LWZkMTUzZGVjLTUzMDYtNGI2Yy05MDcyLWE2ZDYzMDI2Mjg3Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgwNlQxODQyNTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MDYyOTdlZDg4MDUxOTViNGZiYTExNDRmMzU5OWU3MDQ0ZDQ3MWFjZjU0ZDU0ODQ1ZDIxOWE4MmU1Y2M0MWI2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.GLHd1FA-xIyGkkhPMgDBXV15QmkiXZN8X8IL5Rkajnw);
     background-repeat: no-repeat; 
     background-attachment: fixed; 
 }
