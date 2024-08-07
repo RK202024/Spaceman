@@ -2,3 +2,4 @@
 ![beam spaceman](https://github.com/user-attachments/assets/f0cd8068-3762-4170-a029-c2554949e60b)
 ![background spaceman](https://github.com/user-attachments/assets/fd153dec-5306-4b6c-9072-a6d63026287f)
 ![2 aliens spaceman](https://github.com/user-attachments/assets/e01af2db-66bd-442a-a7f1-c1bb3652820c)
+![New word](https://github.com/user-attachments/assets/1378b295-8eb1-467c-9be1-81f831403575)
