@@ -1,37 +1,56 @@
 body {
-    font-family: monoton, sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
     background-image: url(https://private-user-images.githubusercontent.com/175498825/355565256-fd153dec-5306-4b6c-9072-a6d63026287f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjI5NzAwNzYsIm5iZiI6MTcyMjk2OTc3NiwicGF0aCI6Ii8xNzU0OTg4MjUvMzU1NTY1MjU2LWZkMTUzZGVjLTUzMDYtNGI2Yy05MDcyLWE2ZDYzMDI2Mjg3Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgwNlQxODQyNTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MDYyOTdlZDg4MDUxOTViNGZiYTExNDRmMzU5OWU3MDQ0ZDQ3MWFjZjU0ZDU0ODQ1ZDIxOWE4MmU1Y2M0MWI2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.GLHd1FA-xIyGkkhPMgDBXV15QmkiXZN8X8IL5Rkajnw);
+    background-size: cover;
     background-repeat: no-repeat; 
     background-attachment: fixed; 
 }
 
-#header {
+
+
+#middle-panel {
+    font-family: monoton; 
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.8); 
     padding: 10px; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: px;
+    padding: 10px; 
+    color: white;
 }
 
 #spaceship {
-    width: 100px;
+    width: 300px;
     margin-top: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 #beam {
-    width: 10px;
+    width: 150px;
     height: 300px; 
-    margin-top: -10px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
 }
 
 #game-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.8); 
+    /* background-color: rgba(255, 255, 255, 0.8);  */
     padding: 20px; 
+    align-items: center;
+    #left-panel, #right-panel {
+        width: 30%;
+    }
 }
 
 #left-panel, #middle-panel, #right-panel {
@@ -40,6 +59,7 @@ body {
     align-items: center;
 }
 
+
 #word-display {
     display: flex;
     justify-content: center;
@@ -47,9 +67,9 @@ body {
 }
 
 .letter-box {
-    border: 1px solid #000;
-    width: 30px;
-    height: 30px;
+    border: 1px solid white;
+    width: 70px;
+    height: 70px;
     margin: 5px;
     font-size: 20px;
     display: flex;
@@ -66,12 +86,20 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 850px;
 }
 
 .word-bank-letter {
     margin: 5px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 40px;
+    flex-basis: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(10, 198, 38);
+    color: white;
 }
 
 .word-bank-letter.used {
